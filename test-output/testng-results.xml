@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11715" started-at="2024-04-10T10:48:38 CDT" finished-at="2024-04-10T10:48:50 CDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@797badd3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="11715" started-at="2024-04-10T10:48:38 CDT" finished-at="2024-04-10T10:48:50 CDT">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="getdriverDetails()[pri:0, instance:runner.TestRunner@797badd3]" name="getdriverDetails" is-config="true" duration-ms="2804" started-at="2024-04-10T10:48:35 CDT" finished-at="2024-04-10T10:48:38 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdriverDetails -->
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@797badd3]" name="setUpClass" is-config="true" duration-ms="1336" started-at="2024-04-10T10:48:38 CDT" finished-at="2024-04-10T10:48:39 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e2916c3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@797badd3]" name="runScenario" duration-ms="152" started-at="2024-04-10T10:48:39 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-10T10:48:40 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify the URL for Demo_blaze on Google browser"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To verify Greetings to the user"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@797badd3]" name="runScenario" duration-ms="3525" started-at="2024-04-10T10:48:40 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-10T10:48:43 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify the Demo_blaze site showing Greetings to the user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To verify Greetings to the user"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome to Demo_blaze] but found [STORE]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome to Demo_blaze] but found [STORE]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at pageObjects.HomePage.validateMessage(HomePage.java:35)
+at stepDefinations.HomePageDefination.Validate_that_the_site_displays_Welcome_Greeting_to_the_user(HomePageDefination.java:36)
+at ✽.Validate that the DemoBlaze displays Welcome Greeting to the user(file:///C:/Users/Devas/eclipse-2018-workspace/DemoBlaze/src/test/java/features/HomePage.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@797badd3]" name="runScenario" duration-ms="2003" started-at="2024-04-10T10:48:43 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-10T10:48:45 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user navigation to sign up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User redirect to the sign up page and can signin"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@797badd3]" name="runScenario" duration-ms="4574" started-at="2024-04-10T10:48:45 CDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-10T10:48:50 CDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should only be able to login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User redirect to the sign up page and can signin"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@797badd3]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2024-04-10T10:48:50 CDT" finished-at="2024-04-10T10:48:50 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:runner.TestRunner@797badd3]" name="tearDown" is-config="true" duration-ms="1300" started-at="2024-04-10T10:48:50 CDT" finished-at="2024-04-10T10:48:51 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
